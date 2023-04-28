@@ -1,0 +1,140 @@
+            <!DOCTYPE html>
+            <html>
+                <head>
+                    <tilte></tilte>
+                    <link rel="stylesheet" type="text/css" href="css/style.css">
+                    <meta charset="utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                </head>
+                <body>
+                  <!-- Section Navbar -->
+                    <div class="background">
+                        <div class="nav">
+                            <a class="a active" href="#">HOME</a>
+                            <a class="b" href="#">ABOUT ME</a>
+                            <a class="c" href="#">GALLERY</a>
+                            <a class="d" href="#">CONTACT US</a>
+                            </div>
+                            <!-- END Navbar -->
+
+                            <!-- Section Home -->
+                          <div class="content">
+                              <div class="home">
+                                  <h1>Je suis JR Diégane</h1>
+                                  <h3>Etudiant Développeur Web et<br>  Apprenant Référent Digital à Simplon Sénégal</h3> 
+                                </div>
+                                <!-- END Home -->
+
+                                <!-- Section Aboutus -->
+                         <div class="aboutus">
+                             <p><b>Bonjour</b> tout le monde,<br>
+                                Bienvenue sur <b>mon blog.</b><br>
+                                Celui ci est dédié exclusivement à mes domaines de compétences et de prédilection à l'image du développement web,
+                                de L'infographie et de la Maintenance Informatique. <br>
+                                Merci de vous abonner à mon blog afin de ne rien rater de mes projets à venir.
+                                GEEKS... GEEKS... GEEKS...</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+                                     Esse ab, et ratione temporibus in quae at odio maxime voluptatum est.<br>
+                                      Alias odio ea corporis earum. Expedita facere et exercitationem quo?</p>
+                                    </div>
+                                    <!-- END Aboutus -->
+
+                                    <!-- Section Gallery  -->
+                 <div class="gallery">
+                     <h1>Ci-dessous mes domaines de prédilections</h1>
+                     <div class="image">
+                         <img src="images/htmlcss.jpg"/>
+                         </div>
+                         <div class="image">
+                             <img src="images/js.png">
+                         </div>
+                         <div class="image">
+                             <img src="images/reactjs.png">
+                         </div>
+                         <div class="image">
+                             <img src="images/bootstrap.png">
+                         </div>
+                         <div class="image">
+                             <img src="images/wordpress.png">
+                         </div>
+                         <div class="image">
+                             <img src="images/gestiondeprojet.jpg">
+                         </div>
+                         <div class="image">
+                             <img src="images/agile.png">
+                         </div>
+                         <div class="image">
+                             <img src="images/chefprojet.png">
+                              </div>
+                             </div>
+                             <!-- END Gallery -->
+
+                             <!-- Section Contact -->
+                       <div class="contactus">
+                           <div class="contactform">
+                               <form action="index.html" method="post">
+                                   <input type="text" name="" class="inputtext" placeholder="First Name">
+                                   <input type="text" name="" class="inputtext" placeholder="Last Name">
+                                   <input type="text" name="" class ="inputtext" placeholder="Your Email">
+                                   <textarea cols="4" rows="6" class="inputmessage" placeholder="Your Messages"></textarea>
+          <input class="favorite styled" type="button" value="Submit">
+                                   </form>
+                                   <!--END-->
+                              </div>
+                              </div>
+                              </div>
+                         </div>
+
+                         <!-- Fichier Js -->
+          <script
+              src="https://code.jquery.com/jquery-3.6.4.js"
+              integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+              crossorigin="anonymous"></script>
+            <!-- <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+            <script type="text/javascript"> -->
+              <script type="text/javascript">
+            $(document).ready(function(){
+                $('a').click(function(){
+                    var selected = $(this);
+                    $('a').removeClass('active');
+                   $(selected).addClass('active');
+                });
+            var $a = $('.a'),
+            $b = $('.b'),
+            $c = $('.c'),
+            $d = $('.d'),
+            $home = $('.home'),
+            $aboutus = $('.aboutus'),
+            $gallery = $('.gallery'),
+            $contactus = $('.contactus');
+
+            $a.click(function(){
+                $home.fadeIn();
+                $aboutus.fadeOut();
+                $gallery.fadeOut();
+                $contactus.fadeOut();
+                });
+                $b.click(function(){
+                    $aboutus.fadeIn();
+                    $home.fadeOut();
+                    $gallery.fadeOut();
+                $contactus.fadeOut();
+                });
+                $c.click(function(){
+                    $gallery.fadeIn();
+                    $home.fadeOut();
+                    $aboutus.fadeOut();
+                    $contactus.fadeOut();
+            });
+                $d.click(function(){
+                    $contactus.fadeIn();
+                    $home.fadeOut();
+                    $gallery.fadeOut();
+                $aboutus.fadeOut();
+              });
+              });
+
+          </script>
+          <!-- END Fichier Js -->
+          </body>
+          </html>
